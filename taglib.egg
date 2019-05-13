@@ -1,0 +1,10 @@
+((synopsis "Bindings to taglib")
+ (author "Vasilij Schneidermann")
+ (license "LGPL")
+ (category sound)
+ (test-dependencies srfi-1 test)
+ (foreign-dependencies "taglib")
+ (components (extension taglib
+                        (source-dependencies "taglib-impl.scm" "taglib.h")
+                        (csc-options "-c++")
+                        (custom-build "build-taglib"))))

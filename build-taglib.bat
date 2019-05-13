@@ -1,0 +1,2 @@
+@echo off
+%CHICKEN_CSC% -C %TAGLIB_CFLAGS% -L %TAGLIB_LDLIBS% %*

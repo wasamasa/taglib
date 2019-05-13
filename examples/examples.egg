@@ -1,0 +1,7 @@
+((synopsis "taglib examples")
+ (author "Vasilij Schneidermann")
+ (license "LGPL")
+ (dependencies taglib getopt-long)
+ (component-options (csc-options "-m" "example"))
+ (components (program audioinfo)
+             (program tagger)))
